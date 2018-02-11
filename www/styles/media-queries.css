@@ -3,7 +3,7 @@
 	#header {height: 50px !important;}
 	/* #menu_deroulant { display: none;} */
 	#pulldown-content .panel > .accordion-toggle {padding-bottom: 12px; padding-top: 12px;}
-	.img { background-image: url("../image/image/AGIR_small.png"); height:25px; width:80px; margin-top: 12px; margin-left:10px;}
+	.img { background-image: url("../image/image/AGIR_original4.png"); width:100%; margin-top: 12px; margin-left:10px; margin-right:10px;}
 	#search-container {left: 20px; margin-top: 10px;}
 	.toggle.collapsed { margin-left: .4em; box-shadow: none; background: transparent; height: 50px;border: 0; color: #333!important;}
 	.toggle { width: 58px; margin-left: auto; position: absolute; right: 0; top: 0; height: 40px; border-bottom-right-radius: 0;}

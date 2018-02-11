@@ -11,11 +11,11 @@
 	
 	var ImageryMapbox = new ol.layer.Tile({source: new ol.source.XYZ({maxZoom:17,	url: 'http://api.tiles.mapbox.com/v4/alexandrecaron.llljl7kh/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoiYWxleGFuZHJlY2Fyb24iLCJhIjoiTlR2V0J5OCJ9.ynXXZ7pn3GV3Zk9hczwtTg', }), name: 'Imagerie Mapbox'});
     ImageryMapbox.setVisible(false);
-			
-	var EsriTopo = new ol.layer.Tile({source: new ol.source.XYZ({maxZoom:18, attributions: [new ol.Attribution({html: 'Tiles &copy; <a href="http://services.arcgisonline.com/ArcGIS/' + 'rest/services/World_Topo_Map/MapServer">ArcGIS</a>'})], url: 'http://server.arcgisonline.com/ArcGIS/rest/services/' +'World_Topo_Map/MapServer/tile/{z}/{y}/{x}', }), name: 'Topographie ESRI'});
+
+    var EsriTopo = new ol.layer.Tile({source: new ol.source.XYZ({maxZoom:18, attributions: [new ol.Attribution({html: 'Tiles &copy; <a href="http://services.arcgisonline.com/ArcGIS/' + 'rest/services/World_Topo_Map/MapServer">ArcGIS</a>'})], url: 'http://server.arcgisonline.com/ArcGIS/rest/services/' +'World_Topo_Map/MapServer/tile/{z}/{y}/{x}', }), name: 'Topographie ESRI'});
     EsriTopo.setVisible(false);
-		
-	var EsriImagery = new ol.layer.Tile({source: new ol.source.XYZ({maxZoom:17,	attributions: [new ol.Attribution({html: 'Tiles &copy; <a href="http://services.arcgisonline.com/ArcGIS/' + 'rest/services/World_Imagery/MapServer">ArcGIS</a>'})],	url: 'http://server.arcgisonline.com/ArcGIS/rest/services/' +'World_Imagery/MapServer/tile/{z}/{y}/{x}', }), name: 'Imagerie ESRI'});
+
+    var EsriImagery = new ol.layer.Tile({source: new ol.source.XYZ({maxZoom:17,	attributions: [new ol.Attribution({html: 'Tiles &copy; <a href="http://services.arcgisonline.com/ArcGIS/' + 'rest/services/World_Imagery/MapServer">ArcGIS</a>'})],	url: 'http://server.arcgisonline.com/ArcGIS/rest/services/' +'World_Imagery/MapServer/tile/{z}/{y}/{x}', }), name: 'Imagerie ESRI'});
     EsriImagery.setVisible(false);
 
     var OSM = new ol.layer.Tile({

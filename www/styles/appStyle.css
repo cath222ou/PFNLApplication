@@ -1,0 +1,15 @@
+.wrapper1 {
+    text-align: center;
+    margin-top: 50%;
+}
+
+.button1 {
+    font-size: large;
+    /*top: 50%;*/
+    color: white;
+    background: #016B3B;
+    border-color: #2b542c;
+    height: 75px;
+    width: 250px;
+    margin-bottom: 20px;
+}

@@ -1,5 +1,5 @@
 html, body {  height: 100%;  width: 100%;  margin: 0;  padding: 0;  overflow: hidden;}
-body {  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;  font-size: 14px;  line-height: 1.428571429;  color: #333;  background-color: #fff;}
+body {  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;  font-size: 14px;  line-height: 1.428571429;  color: #333;  background-color: #F6852F;}
 
 
 #marker {width: 20px; height: 20px; border: 1px solid #088; border-radius: 10px; background-color: #0FF; opacity: 0.5;}
@@ -26,24 +26,6 @@ body {  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;  font-size: 14
 		.navbar-form .input-group .input-group-btn {  width: 5%;}
 		.input-group-btn .btn-default {background-color:#016B3B; width:50px;}
 		.input-group-btn .glyphicon-search {color:#fff;}
-
-	/* Bouton de connexion */
-		#gSignInWrapper .pull-right{position:absolute; right:0;}
-		.customGPlusSignIn { margin-top:10px; margin-right:5px;}
-		#customBtn {  display: inline-block;  background: #016B3B;  color: white;  width: 145px;  border-radius: 5px;  white-space: nowrap;}
-		#customBtn:hover {  background: #e74b37;  cursor: pointer;}
-		span.label {  font-weight: bold;} 
-		span.icon {  background: url('../image/icone/lock-black-white_1000.png') transparent 1px 50% no-repeat; background-size:contain; display: inline-block;  vertical-align: middle;  width: 30px;  height: 30px;  border-right: #ffffff 1px solid;}
-		span.buttonText {  display: inline-block;  vertical-align: middle;  padding-left: 10px;  padding-right: 10px;  font-size: 14px;  font-weight: bold;  /* Use the Roboto font that is loaded in the <head> */  font-family: 'Roboto',arial,sans-serif;}
-
-		/* Bouton de deconnexion */
-		#gSignInWrapperOut .pull-right{position:absolute; right:0}
-		.customGPlusSignOut { margin-top:10px; margin-right:5px;}
-		#customBtnOut{  display: none;  background: #e74b37;  color: white;  width: 145px;  border-radius: 5px;  white-space: nowrap;}
-		#customBtnOut:hover {  background: #016B3B;  cursor: pointer;}
-		span.label {  font-weight: bold;} 
-		span.icon {  background: url('../image/icone/lock-black-white_1000.png') transparent 1px 50% no-repeat; background-size:contain; display: inline-block;  vertical-align: middle;  width: 30px;  height: 30px;  border-right: #ffffff 1px solid;}
-		span.buttonText {  display: inline-block;  vertical-align: middle;  padding-left: 10px;  padding-right: 10px;  font-size: 14px;  font-weight: bold;  /* Use the Roboto font that is loaded in the <head> */  font-family: 'Roboto',arial,sans-serif;}
 
         /* Bouton IQH */
 		#gSignInWrapperIQH .pull-right{position:absolute; right:0;}
