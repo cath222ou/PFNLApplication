@@ -180,7 +180,7 @@
 		layers: [Groupe_OpenData,Groupe_Basemap, Groupe_IQH1, Groupe_IQH2,Groupe_Meteo, Groupe_Topo],
 		view: view,
 		controls: ol.control.defaults().extend([
-			new ol.control.FullScreen(),
+			// new ol.control.FullScreen(),
 			new app.RotateNorthControl(),
 			new ol.control.ScaleLine(),
 			// new ol.control.ZoomSlider(),

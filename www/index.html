@@ -228,7 +228,7 @@
                 <div class="panel"> <!-- Sélection des couches -->
 
                     <!-- Définitions du menu -->
-                    <a id="catalogHeading" class="panel-heading accordion-toggle collapsed tetePanel" data-toggle="collapse" data-parent="#pulldown-content" href="#catalog"  aria-expanded="false">
+                    <a id="catalogHeading" class="panel-heading accordion-toggle collapsed tetePanel" data-toggle="collapse" data-parent="#pulldown-content" href="#catalog3"  aria-expanded="false">
                         <i class="visible-collapsed icon-sort-right"></i>
                         <i class="hidden-collapsed fa fa-sort-desc"></i>
                         <i class="fa fa-th-list"></i>
@@ -291,14 +291,82 @@
 
                     </div>
                 </div>
+                <!--IQH des CHAMPIGNONS-->
+                <div class="panel"> <!-- Sélection des couches -->
+
+                    <!-- Définitions du menu -->
+                    <a id="catalogHeading" class="panel-heading accordion-toggle collapsed tetePanel" data-toggle="collapse" data-parent="#pulldown-content" href="#catalog"  aria-expanded="false">
+                        <i class="visible-collapsed icon-sort-right"></i>
+                        <i class="hidden-collapsed fa fa-sort-desc"></i>
+                        <i class="fa fa-th-list"></i>
+                        <span class="">PFNL | Champignon forestier</span>
+                    </a>
+                    <div id="catalog" class=" collapse" aria-expanded="false" style="height: 0px;"> <!-- ngIf: !globals.offline -->
+
+                        <!-- Groupe Couche iqh1-->
+                        <!--IQH1 des bleuets-->
+                        <ul class="group">
+                            <a id="couchedefond" class="panel-heading accordion-toggle collapsed" data-toggle="collapse"  href="#IQH1"  aria-expanded="false">
+                                <i class="visible-collapsed fa fa-plus-square-o"></i>
+                                <i class="hidden-collapsed fa fa-minus-square-o"></i>
+                            </a>
+                            <li id="layer2" >
+                                <label class="checkbox" for="visible2">
+                                    <input id="visible2" class="visible" type="checkbox"/>Bleuet 1
+                                </label>
+                            </li>
+                        </ul>
+
+                        <ul id="IQH1" class="layertree collapse">
+                            <li id="layer23" class="sousMenu">
+                                <label class="checkbox" for="visible23">
+                                    <input id="visible23" class="visible" type="checkbox"/>IQH WMS
+                                </label>
+                                <fieldset class="layer">
+                                    <div class="col-md-4">Opacité</div>
+                                    <input class="opacity col-md-8" type="range" min="0" max="1" step="0.01"/>
+
+                                </fieldset>
+                            </li>
+                        </ul>
+
+                        <!--IQH2 des bleuets-->
+                        <ul class="group">
+                            <a id="couchedefond2" class="panel-heading accordion-toggle collapsed" data-toggle="collapse"  href="#IQH2"  aria-expanded="false">
+                                <i class="visible-collapsed fa fa-plus-square-o"></i>
+                                <i class="hidden-collapsed fa fa-minus-square-o"></i>
+                            </a>
+                            <li id="layer3" >
+                                <label class="checkbox" for="visible3">
+                                    <input id="visible3" class="visible" type="checkbox"/>Bleuet 2
+                                </label>
+                            </li>
+                        </ul>
+
+                        <ul id="IQH2" class="layertree collapse">
+                            <li id="layer33" class="sousMenu">
+                                <label class="checkbox" for="visible33">
+                                    <input id="visible33" class="visible" type="checkbox"/>IQH WMS
+                                </label>
+                                <fieldset class="layer">
+                                    <div class="col-md-4">Opacité</div>
+                                    <input class="opacity col-md-8" type="range" min="0" max="1" step="0.01"/>
+
+                                </fieldset>
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+                <!--Fin IQH des CHAMPIGNONS-->
                 <div class="panel"> <!-- Service -->
-                    <a id="catalogHeading" class="panel-heading accordion-toggle collapsed tetePanel" data-toggle="collapse" data-parent="#pulldown-content" href="#catalog3"  aria-expanded="false">
+                    <a id="catalogHeading" class="panel-heading accordion-toggle collapsed tetePanel" data-toggle="collapse" data-parent="#pulldown-content" href="#catalog4"  aria-expanded="false">
                         <i class="visible-collapsed icon-sort-right"></i>
                         <i class="hidden-collapsed fa fa-sort-desc"></i>
                         <i class="fa fa-street-view"></i>
                         <span class="">Couches de service</span>
                     </a>
-                    <div id="catalog3" class="collapse" aria-expanded="false" style="height: 0px;">
+                    <div id="catalog4" class="collapse" aria-expanded="false" style="height: 0px;">
                         <!-- Définition du groupe Open Data -->
                         <ul class="group">
                             <a id="couchedefond" class="panel-heading accordion-toggle collapsed" data-toggle="collapse"  href="#weather"  aria-expanded="false">
