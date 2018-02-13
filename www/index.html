@@ -139,7 +139,7 @@
     <div id="accueil">
 		<!-- Intégration du Logo -->
 		<div id="logo" style="background-color:white">
-			<a href="http://www.groupeagir.com/" target='_blank' >
+			<a href="http://www.groupeagir.com/" target='_blank'>
 				<div class="img"></div>
 			</a>
 		</div>
@@ -153,276 +153,271 @@
     </div>
     <!--Fin page d'acceuil-->
 
-        <!--Page carte-->
+    <!--Page carte-->
 
-        <div id="carte" class="hidden map">
-            <!-- Intégration du menu principal de l'interface SIG Web -->
-            <div id="pulldown" class="">
-                <div id="pulldown-content" class="content collapse in" aria-expanded="true" >
+    <div id="couche" class="hidden map">
+        <!-- Intégration du menu principal de l'interface SIG Web -->
+        <div id="pulldown" class="">
+            <div id="pulldown-content" class="content collapse in" aria-expanded="true" >
 
-                    <div class="panel"> <!-- Base -->
-                        <a id="catalogHeading" class="panel-heading accordion-toggle collapsed" data-toggle="collapse" data-parent="#pulldown-content" href="#catalog2"  aria-expanded="false">
-                            <i class="visible-collapsed icon-sort-right"></i>
-                            <i class="hidden-collapsed fa fa-sort-desc"></i>
-                            <i class="fa fa-map"></i>
-                            <span class="">Fonds de carte</span>
-                        </a>
-                        <div id="catalog2" class="collapse" aria-expanded="false" style="height: 0px;">
-                            <!-- Définition du groupe Open Data -->
-                            <ul class="group">
-                                <a id="couchedefond" class="panel-heading accordion-toggle collapsed" data-toggle="collapse"  href="#basemap"  aria-expanded="false">
-                                    <i class="visible-collapsed fa fa-plus-square-o"></i>
-                                    <i class="hidden-collapsed fa fa-minus-square-o"></i>
-                                </a>
-                                <li id="layer0" >
-                                    <label class="checkbox" for="visible0">
-                                        <input id="visible0" class="visible" type="checkbox"/>Données ouvertes
-                                    </label>
-                                </li>
-                            </ul>
-                            <ul id="basemap" class="layertree collapse">
-                                <li id="layer00">
-                                    <label class="checkbox" for="visible00">
-                                        <input id="visible00" class="visible" type="checkbox"/>OpenStreetMap
-                                    </label>
-                                    <fieldset class="layer">
-                                        <div class="col-md-4">Opacity</div>
-                                        <input class="opacity col-md-8" type="range" min="0" max="1" step="0.01"/>
-                                    </fieldset>
-                                </li>
-                            </ul>
-                            <ul class="group">
-                                <a id="couchedefond" class="panel-heading accordion-toggle collapsed" data-toggle="collapse"  href="#basemap2"  aria-expanded="false">
-                                    <i class="visible-collapsed fa fa-plus-square-o"></i>
-                                    <i class="hidden-collapsed fa fa-minus-square-o"></i>
-                                </a>
-                                <li id="layer1" >
-                                    <label class="checkbox" for="visible1">
-                                        <input id="visible1" class="visible" type="checkbox"/>Données ESRI
-                                    </label>
-                                </li>
-                            </ul>
-                            <ul id="basemap2" class="layertree collapse">
-                                <li id="layer12">
-                                    <label class="checkbox" for="visible12">
-                                        <input id="visible12" class="visible" type="checkbox"/>Imagerie ESRI
-                                    </label>
-                                    <fieldset class="layer">
-                                        <div class="col-md-4">Opacity</div>
-                                        <input class="opacity col-md-8" type="range" min="0" max="1" step="0.01"/>
-                                    </fieldset>
-                                </li>
-                                <li id="layer11">
-                                    <label class="checkbox" for="visible11">
-                                        <input id="visible11" class="visible" type="checkbox"/>Topographie ESRI
-                                    </label>
-                                    <fieldset class="layer">
-                                        <div class="col-md-4">Opacity</div>
-                                        <input class="opacity col-md-8" type="range" min="0" max="1" step="0.01"/>
-                                    </fieldset>
-                                </li>
+                <div class="panel"> <!-- Base -->
+                    <a id="catalogHeading" class="panel-heading accordion-toggle collapsed tetePanel" data-toggle="collapse" data-parent="#pulldown-content" href="#catalog2"  aria-expanded="false">
+                        <i class="visible-collapsed icon-sort-right"></i>
+                        <i class="hidden-collapsed fa fa-sort-desc"></i>
+                        <i class="fa fa-map"></i>
+                        <span class="">Fonds de carte</span>
+                    </a>
+                    <div id="catalog2" class="collapse" aria-expanded="false" style="height: 0px;">
+                        <!-- Définition du groupe Open Data -->
+                        <ul class="group">
+                            <a id="couchedefond" class="panel-heading accordion-toggle collapsed" data-toggle="collapse"  href="#basemap"  aria-expanded="false">
+                                <i class="visible-collapsed fa fa-plus-square-o"></i>
+                                <i class="hidden-collapsed fa fa-minus-square-o"></i>
+                            </a>
+                            <li id="layer0" >
+                                <label class="checkbox" for="visible0">
+                                    <input id="visible0" class="visible" type="checkbox"/>Données ouvertes
+                                </label>
+                            </li>
+                        </ul>
+                        <ul id="basemap" class="layertree collapse">
+                            <li id="layer00" class="sousMenu">
+                                <label class="checkbox" for="visible00">
+                                    <input id="visible00" class="visible" type="checkbox"/>OpenStreetMap
+                                </label>
+                                <fieldset class="layer">
+                                    <div class="col-md-4">Opacity</div>
+                                    <input class="opacity col-md-8" type="range" min="0" max="1" step="0.01"/>
+                                </fieldset>
+                            </li>
+                        </ul>
+                        <ul class="group">
+                            <a id="couchedefond" class="panel-heading accordion-toggle collapsed" data-toggle="collapse"  href="#basemap2"  aria-expanded="false">
+                                <i class="visible-collapsed fa fa-plus-square-o"></i>
+                                <i class="hidden-collapsed fa fa-minus-square-o"></i>
+                            </a>
+                            <li id="layer1">
+                                <label class="checkbox" for="visible1">
+                                    <input id="visible1" class="visible" type="checkbox"/>Données ESRI
+                                </label>
+                            </li>
+                        </ul>
+                        <ul id="basemap2" class="layertree collapse">
+                            <li id="layer12" class="sousMenu">
+                                <label class="checkbox" for="visible12">
+                                    <input id="visible12" class="visible" type="checkbox"/>Imagerie ESRI
+                                </label>
+                                <fieldset class="layer">
+                                    <div class="col-md-4">Opacity</div>
+                                    <input class="opacity col-md-8" type="range" min="0" max="1" step="0.01"/>
+                                </fieldset>
+                            </li>
+                            <li id="layer11" class="sousMenu">
+                                <label class="checkbox" for="visible11">
+                                    <input id="visible11" class="visible" type="checkbox"/>Topographie ESRI
+                                </label>
+                                <fieldset class="layer">
+                                    <div class="col-md-4">Opacity</div>
+                                    <input class="opacity col-md-8" type="range" min="0" max="1" step="0.01"/>
+                                </fieldset>
+                            </li>
 
-                            </ul>
-                        </div>
+                        </ul>
                     </div>
-                    <div class="panel"> <!-- Sélection des couches -->
-
-                        <!-- Définitions du menu -->
-                        <a id="catalogHeading" class="panel-heading accordion-toggle collapsed" data-toggle="collapse" data-parent="#pulldown-content" href="#catalog"  aria-expanded="false">
-                            <i class="visible-collapsed icon-sort-right"></i>
-                            <i class="hidden-collapsed fa fa-sort-desc"></i>
-                            <i class="fa fa-th-list"></i>
-                            <span class="">PFNL | Bleuet Sauvage</span>
-                        </a>
-                        <div id="catalog" class=" collapse" aria-expanded="false" style="height: 0px;"> <!-- ngIf: !globals.offline -->
-
-                            <!-- Groupe Couche iqh1-->
-
-                            <ul class="group">
-                                <a id="couchedefond" class="panel-heading accordion-toggle collapsed" data-toggle="collapse"  href="#IQH1"  aria-expanded="false">
-                                    <i class="visible-collapsed fa fa-plus-square-o"></i>
-                                    <i class="hidden-collapsed fa fa-minus-square-o"></i>
-                                </a>
-                                <li id="layer2" >
-                                    <label class="checkbox" for="visible2">
-                                        <input id="visible2" class="visible" type="checkbox"/>Bleuet 1
-                                    </label>
-                                </li>
-                            </ul>
-
-                            <ul id="IQH1" class="layertree collapse">
-                                <li id="layer23">
-                                    <label class="checkbox" for="visible23">
-                                        <input id="visible23" class="visible" type="checkbox"/>IQH WMS
-                                    </label>
-                                    <fieldset class="layer">
-                                        <div class="col-md-4">Opacité</div>
-                                        <input class="opacity col-md-8" type="range" min="0" max="1" step="0.01"/>
-
-                                    </fieldset>
-                                </li>
-                            </ul>
-                            <ul class="group">
-                                <a id="couchedefond" class="panel-heading accordion-toggle collapsed" data-toggle="collapse"  href="#IQH1"  aria-expanded="false">
-                                    <i class="visible-collapsed fa fa-plus-square-o"></i>
-                                    <i class="hidden-collapsed fa fa-minus-square-o"></i>
-                                </a>
-                                <li id="layer3" >
-                                    <label class="checkbox" for="visible3">
-                                        <input id="visible2" class="visible" type="checkbox"/>Bleuet 2
-                                    </label>
-                                </li>
-                            </ul>
-
-                            <ul id="IQH2" class="layertree collapse">
-                                <li id="layer33">
-                                    <label class="checkbox" for="visible33">
-                                        <input id="visible23" class="visible" type="checkbox"/>IQH WMS
-                                    </label>
-                                    <fieldset class="layer">
-                                        <div class="col-md-4">Opacité</div>
-                                        <input class="opacity col-md-8" type="range" min="0" max="1" step="0.01"/>
-
-                                    </fieldset>
-                                </li>
-                            </ul>
-
-                        </div>
-                    </div>
-                    <div class="panel"> <!-- Service -->
-                        <a id="catalogHeading" class="panel-heading accordion-toggle collapsed" data-toggle="collapse" data-parent="#pulldown-content" href="#catalog3"  aria-expanded="false">
-                            <i class="visible-collapsed icon-sort-right"></i>
-                            <i class="hidden-collapsed fa fa-sort-desc"></i>
-                            <i class="fa fa-street-view"></i>
-                            <span class="">Couches de service</span>
-                        </a>
-                        <div id="catalog3" class="collapse" aria-expanded="false" style="height: 0px;">
-                            <!-- Définition du groupe Open Data -->
-                            <ul class="group">
-                                <a id="couchedefond" class="panel-heading accordion-toggle collapsed" data-toggle="collapse"  href="#weather"  aria-expanded="false">
-                                    <i class="visible-collapsed fa fa-plus-square-o"></i>
-                                    <i class="hidden-collapsed fa fa-minus-square-o"></i>
-                                </a>
-                                <li id="layer4" >
-                                    <label class="checkbox" for="visible4">
-                                        <input id="visible4" class="visible" type="checkbox"/>Météo
-                                    </label>
-                                </li>
-                            </ul>
-                            <ul id="weather" class="layertree collapse">
-                                <li id="layer40">
-                                    <label class="checkbox" for="visible40">
-                                        <input id="visible40" class="visible" type="checkbox"/>Précipitation 6h
-                                    </label>
-                                    <fieldset class="layer">
-                                        <div class="col-md-4">Opacité</div>
-                                        <input class="opacity col-md-8" type="range" min="0" max="1" step="0.01"/>
-                                        <IMG alt="legende" src="http://geo.weather.gc.ca/geomet/?SERVICE=WMS&version=1.0.0&layer=RDPA.6P_PR&REQUEST=getlegendgraphic&FORMAT=image/png">
-                                    </fieldset>
-                                </li>
-                                <li id="layer41">
-                                    <label class="checkbox" for="visible41">
-                                        <input id="visible41" class="visible" type="checkbox"/>Radar/Pluie
-                                    </label>
-                                    <fieldset class="layer">
-                                        <div class="col-md-4">Opacité</div>
-                                        <input class="opacity col-md-8" type="range" min="0" max="1" step="0.01"/>
-                                    </fieldset>
-                                </li>
-                                <li id="layer42">
-                                    <label class="checkbox" for="visible42">
-                                        <input id="visible42" class="visible" type="checkbox"/>Température
-                                    </label>
-                                    <fieldset class="layer">
-                                        <div class="col-md-4">Opacité</div>
-                                        <input class="opacity col-md-8" type="range" min="0" max="1" step="0.01"/>
-                                        <IMG alt="legende" src="http://geo.weather.gc.ca/geomet/?SERVICE=WMS&version=1.0.0&layer=HRDPS.CONTINENTAL_TT&REQUEST=getlegendgraphic&FORMAT=image/png">
-                                    </fieldset>
-                                </li>
-                            </ul>
-                            <ul class="group">
-                                <a id="couchedefond" class="panel-heading accordion-toggle collapsed" data-toggle="collapse"  href="#travel"  aria-expanded="false">
-                                    <i class="visible-collapsed fa fa-plus-square-o"></i>
-                                    <i class="hidden-collapsed fa fa-minus-square-o"></i>
-                                </a>
-                                <li id="layer5" >
-                                    <label class="checkbox" for="visible5">
-                                        <input id="visible5" class="visible" type="checkbox"/>Topographie
-                                    </label>
-                                </li>
-                            </ul>
-                            <ul id="travel" class="layertree collapse">
-                                <li id="layer50">
-                                    <label class="checkbox" for="visible50">
-                                        <input id="visible50" class="visible" type="checkbox"/>Réseau hydro
-                                    </label>
-                                    <fieldset class="layer">
-                                        <div class="col-md-4">Opacité</div>
-                                        <input class="opacity col-md-8" type="range" min="0" max="1" step="0.01"/>
-                                    </fieldset>
-                                </li>
-                                <li id="layer51">
-                                    <label class="checkbox" for="visible51">
-                                        <input id="visible51" class="visible" type="checkbox"/>Réseau routier
-                                    </label>
-                                    <fieldset class="layer">
-                                        <div class="col-md-4">Opacité</div>
-                                        <input class="opacity col-md-8" type="range" min="0" max="1" step="0.01"/>
-                                    </fieldset>
-                                </li>
-                                <li id="layer52">
-                                    <label class="checkbox" for="visible52">
-                                        <input id="visible52" class="visible" type="checkbox"/>Chemins
-                                    </label>
-                                    <fieldset class="layer">
-                                        <div class="col-md-4">Opacité</div>
-                                        <input class="opacity col-md-8" type="range" min="0" max="1" step="0.01"/>
-                                    </fieldset>
-                                </li>
-                            </ul>
-
-                        </div>
-                    </div>
-
                 </div>
-                <!-- Bouton MENU Close -->
-                <button id="menu-button" type="button" data-toggle="collapse" data-target="#pulldown-content" class="toggle btn btn-default" aria-expanded="true">
-					<span class="hidden-collapsed">
-						<i class="icon-caret-up"></i>
-						<span translate="" class="">Fermer</span>
-						<span class="phone-toggle">×</span>
-					</span>
-                    <span class="visible-collapsed">
-						<i class="fa fa-bars"></i>
-						<i class="icon-caret-down"></i>
-						<span translate="" class="">Menu</span>
-					</span>
-                </button>
+                <div class="panel"> <!-- Sélection des couches -->
+
+                    <!-- Définitions du menu -->
+                    <a id="catalogHeading" class="panel-heading accordion-toggle collapsed tetePanel" data-toggle="collapse" data-parent="#pulldown-content" href="#catalog"  aria-expanded="false">
+                        <i class="visible-collapsed icon-sort-right"></i>
+                        <i class="hidden-collapsed fa fa-sort-desc"></i>
+                        <i class="fa fa-th-list"></i>
+                        <span class="">PFNL | Bleuet Sauvage</span>
+                    </a>
+                    <div id="catalog" class=" collapse" aria-expanded="false" style="height: 0px;"> <!-- ngIf: !globals.offline -->
+
+                        <!-- Groupe Couche iqh1-->
+                        <!--IQH1 des bleuets-->
+                        <ul class="group">
+                            <a id="couchedefond" class="panel-heading accordion-toggle collapsed" data-toggle="collapse"  href="#IQH1"  aria-expanded="false">
+                                <i class="visible-collapsed fa fa-plus-square-o"></i>
+                                <i class="hidden-collapsed fa fa-minus-square-o"></i>
+                            </a>
+                            <li id="layer2" >
+                                <label class="checkbox" for="visible2">
+                                    <input id="visible2" class="visible" type="checkbox"/>Bleuet 1
+                                </label>
+                            </li>
+                        </ul>
+
+                        <ul id="IQH1" class="layertree collapse">
+                            <li id="layer23" class="sousMenu">
+                                <label class="checkbox" for="visible23">
+                                    <input id="visible23" class="visible" type="checkbox"/>IQH WMS
+                                </label>
+                                <fieldset class="layer">
+                                    <div class="col-md-4">Opacité</div>
+                                    <input class="opacity col-md-8" type="range" min="0" max="1" step="0.01"/>
+
+                                </fieldset>
+                            </li>
+                        </ul>
+
+                        <!--IQH2 des bleuets-->
+                        <ul class="group">
+                            <a id="couchedefond2" class="panel-heading accordion-toggle collapsed" data-toggle="collapse"  href="#IQH2"  aria-expanded="false">
+                                <i class="visible-collapsed fa fa-plus-square-o"></i>
+                                <i class="hidden-collapsed fa fa-minus-square-o"></i>
+                            </a>
+                            <li id="layer3" >
+                                <label class="checkbox" for="visible3">
+                                    <input id="visible3" class="visible" type="checkbox"/>Bleuet 2
+                                </label>
+                            </li>
+                        </ul>
+
+                        <ul id="IQH2" class="layertree collapse">
+                            <li id="layer33" class="sousMenu">
+                                <label class="checkbox" for="visible33">
+                                    <input id="visible33" class="visible" type="checkbox"/>IQH WMS
+                                </label>
+                                <fieldset class="layer">
+                                    <div class="col-md-4">Opacité</div>
+                                    <input class="opacity col-md-8" type="range" min="0" max="1" step="0.01"/>
+
+                                </fieldset>
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+                <div class="panel"> <!-- Service -->
+                    <a id="catalogHeading" class="panel-heading accordion-toggle collapsed tetePanel" data-toggle="collapse" data-parent="#pulldown-content" href="#catalog3"  aria-expanded="false">
+                        <i class="visible-collapsed icon-sort-right"></i>
+                        <i class="hidden-collapsed fa fa-sort-desc"></i>
+                        <i class="fa fa-street-view"></i>
+                        <span class="">Couches de service</span>
+                    </a>
+                    <div id="catalog3" class="collapse" aria-expanded="false" style="height: 0px;">
+                        <!-- Définition du groupe Open Data -->
+                        <ul class="group">
+                            <a id="couchedefond" class="panel-heading accordion-toggle collapsed" data-toggle="collapse"  href="#weather"  aria-expanded="false">
+                                <i class="visible-collapsed fa fa-plus-square-o"></i>
+                                <i class="hidden-collapsed fa fa-minus-square-o"></i>
+                            </a>
+                            <li id="layer4" >
+                                <label class="checkbox" for="visible4">
+                                    <input id="visible4" class="visible" type="checkbox"/>Météo
+                                </label>
+                            </li>
+                        </ul>
+                        <ul id="weather" class="layertree collapse">
+                            <li id="layer40" class="sousMenu">
+                                <label class="checkbox" for="visible40">
+                                    <input id="visible40" class="visible" type="checkbox"/>Précipitation 6h
+                                </label>
+                                <fieldset class="layer">
+                                    <div class="col-md-4">Opacité</div>
+                                    <input class="opacity col-md-8" type="range" min="0" max="1" step="0.01"/>
+                                    <IMG alt="legende" src="http://geo.weather.gc.ca/geomet/?SERVICE=WMS&version=1.0.0&layer=RDPA.6P_PR&REQUEST=getlegendgraphic&FORMAT=image/png">
+                                </fieldset>
+                            </li>
+                            <li id="layer41" class="sousMenu">
+                                <label class="checkbox" for="visible41">
+                                    <input id="visible41" class="visible" type="checkbox"/>Radar/Pluie
+                                </label>
+                                <fieldset class="layer">
+                                    <div class="col-md-4">Opacité</div>
+                                    <input class="opacity col-md-8" type="range" min="0" max="1" step="0.01"/>
+                                </fieldset>
+                            </li>
+                            <li id="layer42" class="sousMenu">
+                                <label class="checkbox" for="visible42">
+                                    <input id="visible42" class="visible" type="checkbox"/>Température
+                                </label>
+                                <fieldset class="layer">
+                                    <div class="col-md-4">Opacité</div>
+                                    <input class="opacity col-md-8" type="range" min="0" max="1" step="0.01"/>
+                                    <IMG alt="legende" src="http://geo.weather.gc.ca/geomet/?SERVICE=WMS&version=1.0.0&layer=HRDPS.CONTINENTAL_TT&REQUEST=getlegendgraphic&FORMAT=image/png">
+                                </fieldset>
+                            </li>
+                        </ul>
+                        <ul class="group">
+                            <a id="couchedefond" class="panel-heading accordion-toggle collapsed" data-toggle="collapse"  href="#travel"  aria-expanded="false">
+                                <i class="visible-collapsed fa fa-plus-square-o"></i>
+                                <i class="hidden-collapsed fa fa-minus-square-o"></i>
+                            </a>
+                            <li id="layer5" >
+                                <label class="checkbox" for="visible5">
+                                    <input id="visible5" class="visible" type="checkbox"/>Topographie
+                                </label>
+                            </li>
+                        </ul>
+                        <ul id="travel" class="layertree collapse">
+                            <li id="layer50" class="sousMenu">
+                                <label class="checkbox" for="visible50">
+                                    <input id="visible50" class="visible" type="checkbox"/>Réseau hydro
+                                </label>
+                                <fieldset class="layer">
+                                    <div class="col-md-4">Opacité</div>
+                                    <input class="opacity col-md-8" type="range" min="0" max="1" step="0.01"/>
+                                </fieldset>
+                            </li>
+                            <li id="layer51" class="sousMenu">
+                                <label class="checkbox" for="visible51">
+                                    <input id="visible51" class="visible" type="checkbox"/>Réseau routier
+                                </label>
+                                <fieldset class="layer">
+                                    <div class="col-md-4">Opacité</div>
+                                    <input class="opacity col-md-8" type="range" min="0" max="1" step="0.01"/>
+                                </fieldset>
+                            </li>
+                            <li id="layer52" class="sousMenu">
+                                <label class="checkbox" for="visible52">
+                                    <input id="visible52" class="visible" type="checkbox"/>Chemins
+                                </label>
+                                <fieldset class="layer">
+                                    <div class="col-md-4">Opacité</div>
+                                    <input class="opacity col-md-8" type="range" min="0" max="1" step="0.01"/>
+                                </fieldset>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
             </div>
-            <!-- Fin intégration du menu principal de l'interface SIG Web -->
+            <!-- Bouton MENU Close -->
+            <button id="menu-button" type="button" data-toggle="collapse" data-target="#pulldown-content" class="toggle btn btn-default" aria-expanded="true">
+                <span class="hidden-collapsed">
+                    <i class="icon-caret-up"></i>
+                    <span translate="" class="">Fermer</span>
+                    <span class="phone-toggle">×</span>
+                </span>
+                <span class="visible-collapsed buttonCouche ui-button ui-widget ui-corner-all">
+                    <i class="fa fa-bars awesomeBtnCouche"></i>
+                    <i class="icon-caret-down"></i>
+                    <span translate="" class="">Menu</span>
+                </span>
+            </button>
         </div>
-        <!-- Fin création du cadre de travail-->
+        <!-- Fin intégration du menu principal de l'interface SIG Web -->
+    </div>
+    <!-- Fin création du cadre de travail-->
 
-        <!-- Intégration carte d'Openlayers -->
+    <!-- Intégration carte d'Openlayers -->
 
-
-
-            <div class="container-fluid">
-                <div class="row-fluid">
-                    <div class="span12">
-                        <div id="map" class="map">
-                            <button id="retour1" class="buttonRetour ui-button ui-widget ui-corner-all"><i class="fa fa-arrow-left fa-2x awesomeBtn"></i></button>
-                        </div>
-
-                        <div id="popup" class="ol-popup">
-                            <a href="#" id="popup-closer" class="ol-popup-closer circle"></a>
-                            <div id="popup-content"></div>
-                        </div>
-                    </div>
+    <div id="carte" class="container-fluid">
+        <div class="row-fluid">
+            <div class="span12">
+                <div id="map" class="map">
+                    <button id="retour1" class="buttonRetour ui-button ui-widget ui-corner-all"><i class="fa fa-arrow-left fa-2x awesomeBtn"></i></button>
                 </div>
+                <button id="download" class="buttonDownload ui-button ui-widget ui-corner-all"><i class="fa fa-download fa-2x awesomeBtnDownload"></i></button>
             </div>
+        </div>
+    </div>
 
-        <!-- Fin intégration carte d'Openlayers -->
+    <!-- Fin intégration carte d'Openlayers -->
 
 
     <!--Fin page carte-->
@@ -433,7 +428,7 @@
         allooooo
     </div>
     <!--Fin page carte-->
-</body>
+
 
 
 
@@ -505,3 +500,5 @@
 -->
 
 <script src="lib/testOffline.js" type="text/javascript"></script>
+</body>
+</html>

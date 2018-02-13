@@ -188,7 +188,7 @@
 		]),
 		interactions: ol.interaction.defaults().extend([
 			new ol.interaction.DragRotateAndZoom()
-		  ]),
+		  ])
 		});
 		
 /* Création du style pour la grille */

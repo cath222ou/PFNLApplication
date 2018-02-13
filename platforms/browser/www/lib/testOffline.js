@@ -1,10 +1,11 @@
 //Afficher la division Carte
+$('#carte').addClass('hidden');
 
 $("#carteBtn").click(function() {
     if (navigator.onLine === true) {
-        $('#carte').toggleClass('hidden');
-        $('#map').toggleClass('hidden');
-        $('#accueil').toggleClass('hidden');
+        $('#couche').removeClass('hidden');
+        $('#carte').removeClass('hidden');
+        $('#accueil').addClass('hidden');
     }
     else {
         alert("Vous n'avez pas d'accès internet")
@@ -14,19 +15,19 @@ $("#carteBtn").click(function() {
 
 //Afficher la division Mes Cartes
 $("#mesCartesBtn").click(function() {
-    $('#mesCartes').toggleClass('hidden');
-    $('#accueil').toggleClass('hidden');
+    $('#mesCartes').removeClass('hidden');
+    $('#accueil').addClass('hidden');
 });
 
 //Afficher la division Accueil
 $("#retour1").click(function() {
-    $('#carte').toggleClass('hidden');
-    $('#map').toggleClass('hidden');
-    $('#accueil').toggleClass('hidden');
+    $('#couche').addClass('hidden');
+    $('#carte').addClass('hidden');
+    $('#accueil').removeClass('hidden');
 });
 
 //Afficher la division Accueil
 $("#retour2").click(function() {
-    $('#mesCartes').toggleClass('hidden');
-    $('#accueil').toggleClass('hidden');
+    $('#mesCartes').addClass('hidden');
+    $('#accueil').removeClass('hidden');
 });
