@@ -15,17 +15,6 @@ $("#carteBtn").click(function() {
         // source.on('tileloadend', function (evt) {
         //     console.log(tileUrlFunction(evt.tile.getTileCoord(), 1, ol.proj.get('EPSG:3857')));
         // });
-
-
-    // var source = OSM.getSource();
-    //
-    // var tileUrlFunction = source.getTileUrlFunction();
-    //
-    // source.on('tileloadend', function (evt) {
-    //     source_url = tileUrlFunction(evt.tile.getTileCoord(), 1, ol.proj.get('EPSG:3857'));
-    //     console.log(source_url);
-    //     localStorage.setItem('layerUrl' , source_url );
-    //     console.log('local'+ localStorage.getItem('layerUrl'));
     // });
 
 
@@ -59,4 +48,22 @@ $("#retour2").click(function() {
 });
 
 
+$("#download").click(function() {
+    map.getView().setZoom(map.getView().getZoom()-1);
+    var source = OSM.getSource();
+    var tileUrlFunction = source.getTileUrlFunction();
 
+
+    source.on('tileloadend', function (evt) {
+
+        source_url = tileUrlFunction(evt.tile.getTileCoord(), 1, ol.proj.get('EPSG:3857'));
+        console.log(source_url);
+        localStorage.setItem('layerUrl' , source_url );
+        // console.log('local'+ localStorage.getItem('layerUrl'));
+
+    });
+
+    source.on('tileloadend', function (event) {
+        event.stopPropagation()
+    })
+});

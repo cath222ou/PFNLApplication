@@ -19,8 +19,7 @@
     EsriImagery.setVisible(false);
 
     var OSM = new ol.layer.Tile({
-        preload: Infinity,
-        source : new ol.source.OSM()
+        source : new ol.source.OSM(),
     }
     );
     OSM.setVisible(true);
@@ -32,7 +31,7 @@
 	/** Définition des couches PFNL (overlay)  - Exemple de 2 groupes IQH sur plusieurs échelles : Groupe_IQH1 et Groupe_IQH2 **/
 	var iqh1_20 = new ol.layer.Vector({
       source: new ol.source.GeoJSON({
-                url: "data/iqh/iqh3/grille20/iqh3.geojson",
+                url: "http://igeomedia.com/~odupras/data/iqh/iqh3/grille20/iqh3.geojson",
                 projection: 'EPSG:3857'
                 }),
       title:"IQH Grille 20",
@@ -44,7 +43,7 @@
 
     var iqh1_50 = new ol.layer.Vector({
       source: new ol.source.GeoJSON({
-                url: "data/iqh/iqh3/grille50/iqh3.geojson",
+                url: "http://igeomedia.com/~odupras/data/iqh/iqh3/grille50/iqh3.geojson",
                 projection: 'EPSG:3857'
                 }),
       title:"IQH Grille 50",
@@ -56,7 +55,7 @@
 
     var iqh1_250 = new ol.layer.Vector({
       source: new ol.source.GeoJSON({
-                url: "data/iqh/iqh3/grille250/iqh3.geojson",
+                url: "http://igeomedia.com/~odupras/data/iqh/iqh3/grille250/iqh3.geojson",
                 projection: 'EPSG:3857'
                 }),
       title:"IQH Grille 250",
@@ -80,7 +79,7 @@
 
 	var iqh2_20 = new ol.layer.Vector({
       source: new ol.source.GeoJSON({
-                url: "data/iqh/iqh8/grille20/iqh8.geojson",
+                url: "http://igeomedia.com/~odupras/data/iqh/iqh8/grille20/iqh8.geojson",
                 projection: 'EPSG:3857'
                 }),
       title:"IQH Grille 20",
@@ -92,7 +91,7 @@
 
     var iqh2_50 = new ol.layer.Vector({
       source: new ol.source.GeoJSON({
-                url: "data/iqh/iqh8/grille50/iqh8.geojson",
+                url: "http://igeomedia.com/~odupras/data/iqh/iqh8/grille50/iqh8.geojson",
                 projection: 'EPSG:3857'
                 }),
       title:"IQH Grille 50",
@@ -104,7 +103,7 @@
 
     var iqh2_250 = new ol.layer.Vector({
       source: new ol.source.GeoJSON({
-                url: "data/iqh/iqh8/grille250/iqh8.geojson",
+                url: "http://igeomedia.com/~odupras/data/iqh/iqh8/grille250/iqh8.geojson",
                 projection: 'EPSG:3857'
                 }),
       title:"IQH Grille 250",
