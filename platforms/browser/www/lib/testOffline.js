@@ -17,10 +17,6 @@ $("#carteBtn").click(function() {
         // });
     // });
 
-
-
-
-
     }
     else {
         alert("Vous n'avez pas d'accès internet")
@@ -31,6 +27,7 @@ $("#carteBtn").click(function() {
 //Afficher la division Mes Cartes
 $("#mesCartesBtn").click(function() {
     $('#mesCartes').removeClass('hidden');
+    $('#mesCartesHorsligne').removeClass('hidden');
     $('#accueil').addClass('hidden');
 });
 
@@ -44,6 +41,7 @@ $("#retour1").click(function() {
 //Afficher la division Accueil
 $("#retour2").click(function() {
     $('#mesCartes').addClass('hidden');
+    $('#mesCartesHorsligne').addClass('hidden');
     $('#accueil').removeClass('hidden');
 });
 
@@ -63,7 +61,7 @@ $("#download").click(function() {
 
     });
 
-    source.on('tileloadend', function (event) {
-        event.stopPropagation()
-    })
+    // source.on('tileloadend', function (event) {
+    //     event.stopPropagation()
+    // })
 });

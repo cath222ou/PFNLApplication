@@ -13,17 +13,27 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.17481074">
+    <splitter split-orientation="horizontal" split-proportion="0.49827942">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/index.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="8">
-                  <caret line="295" column="0" lean-forward="true" selection-start-line="295" selection-start-column="0" selection-end-line="295" selection-end-column="0" />
+                <state relative-caret-position="365">
+                  <caret line="501" column="36" lean-forward="true" selection-start-line="501" selection-start-column="36" selection-end-line="501" selection-end-column="48" />
                   <folding>
                     <element signature="n#head#0;n#html#0;n#!!top" expanded="false" />
                   </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="carteOffline.js" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/lib/carteOffline.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="102">
+                  <caret line="6" column="25" lean-forward="true" selection-start-line="6" selection-start-column="25" selection-end-line="6" selection-end-column="25" />
+                  <folding />
                 </state>
               </provider>
             </entry>
@@ -35,10 +45,10 @@
           <file leaf-file-name="testOffline.js" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/lib/testOffline.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="712">
-                  <caret line="50" column="0" lean-forward="true" selection-start-line="50" selection-start-column="0" selection-end-line="68" selection-end-column="3" />
+                <state relative-caret-position="362">
+                  <caret line="58" column="38" lean-forward="false" selection-start-line="58" selection-start-column="30" selection-end-line="58" selection-end-column="38" />
                   <folding>
-                    <marker date="1518991179850" expanded="true" signature="595:606" ph="//..." />
+                    <marker date="1519003086666" expanded="true" signature="595:606" ph="//..." />
                   </folding>
                 </state>
               </provider>
@@ -47,7 +57,7 @@
           <file leaf-file-name="ol-debug.js" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/iqh/plugins/ol-3.14.0-dist/ol-debug.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="288">
+                <state relative-caret-position="17">
                   <caret line="45358" column="0" lean-forward="false" selection-start-line="45358" selection-start-column="0" selection-end-line="45358" selection-end-column="0" />
                   <folding />
                 </state>
@@ -77,11 +87,24 @@
           <file leaf-file-name="initCarte.js" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/lib/initCarte.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="153">
-                  <caret line="105" column="52" lean-forward="false" selection-start-line="105" selection-start-column="52" selection-end-line="105" selection-end-column="52" />
+                <state relative-caret-position="-2448">
+                  <caret line="21" column="8" lean-forward="false" selection-start-line="21" selection-start-column="8" selection-end-line="21" selection-end-column="37" />
                   <folding>
                     <marker date="1518992416282" expanded="true" signature="772:778" ph="©" />
                     <marker date="1518992416282" expanded="true" signature="1188:1194" ph="©" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="data_loader.js" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/iqh/dist/js/data_loader.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="1448">
+                  <caret line="342" column="4" lean-forward="true" selection-start-line="342" selection-start-column="4" selection-end-line="342" selection-end-column="4" />
+                  <folding>
+                    <marker date="1518286915421" expanded="true" signature="2599:2611" ph="..." />
+                    <marker date="1518286915421" expanded="true" signature="14390:14402" ph="..." />
                   </folding>
                 </state>
               </provider>
@@ -136,8 +159,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JavaScript File" />
         <option value="CSS File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -176,9 +199,10 @@
         <option value="$PROJECT_DIR$/styles/media-queries.css" />
         <option value="$PROJECT_DIR$/styles/style.css" />
         <option value="$PROJECT_DIR$/styles/appStyle.css" />
-        <option value="$PROJECT_DIR$/index.html" />
-        <option value="$PROJECT_DIR$/lib/testOffline.js" />
         <option value="$PROJECT_DIR$/lib/initCarte.js" />
+        <option value="$PROJECT_DIR$/lib/testOffline.js" />
+        <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/lib/carteOffline.js" />
       </list>
     </option>
   </component>
@@ -208,8 +232,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -278,11 +302,12 @@
       <workItem from="1518919124137" duration="14000" />
       <workItem from="1518919956573" duration="10000" />
       <workItem from="1518962044395" duration="26757000" />
+      <workItem from="1519002012414" duration="2396000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="100699000" />
+    <option name="totallyTimeSpent" value="103095000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1696" height="1026" extended-state="6" />
@@ -291,6 +316,7 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32968238" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2902519" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -302,7 +328,6 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2902519" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -322,24 +347,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4794">
-          <caret line="413" column="162" lean-forward="false" selection-start-line="413" selection-start-column="162" selection-end-line="413" selection-end-column="162" />
-          <folding>
-            <element signature="n#head#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/styles/appStyle.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lib/font-awesome/css/font-awesome.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="7871">
@@ -374,7 +381,7 @@
         <state relative-caret-position="391">
           <caret line="23" column="36" lean-forward="false" selection-start-line="23" selection-start-column="36" selection-end-line="23" selection-end-column="36" />
           <folding>
-            <marker date="1518991179850" expanded="true" signature="595:606" ph="//..." />
+            <marker date="1519003086666" expanded="true" signature="595:606" ph="//..." />
           </folding>
         </state>
       </provider>
@@ -636,19 +643,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
+    <entry file="file://$PROJECT_DIR$/iqh/dist/js/data_loader.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="8">
-          <caret line="295" column="0" lean-forward="true" selection-start-line="295" selection-start-column="0" selection-end-line="295" selection-end-column="0" />
+        <state relative-caret-position="1448">
+          <caret line="342" column="4" lean-forward="true" selection-start-line="342" selection-start-column="4" selection-end-line="342" selection-end-column="4" />
           <folding>
-            <element signature="n#head#0;n#html#0;n#!!top" expanded="false" />
+            <marker date="1518286915421" expanded="true" signature="2599:2611" ph="..." />
+            <marker date="1518286915421" expanded="true" signature="14390:14402" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/iqh/plugins/ol-3.14.0-dist/ol-debug.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
+        <state relative-caret-position="17">
           <caret line="45358" column="0" lean-forward="false" selection-start-line="45358" selection-start-column="0" selection-end-line="45358" selection-end-column="0" />
           <folding />
         </state>
@@ -656,21 +664,39 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/testOffline.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="712">
-          <caret line="50" column="0" lean-forward="true" selection-start-line="50" selection-start-column="0" selection-end-line="68" selection-end-column="3" />
+        <state relative-caret-position="362">
+          <caret line="58" column="38" lean-forward="false" selection-start-line="58" selection-start-column="30" selection-end-line="58" selection-end-column="38" />
           <folding>
-            <marker date="1518991179850" expanded="true" signature="595:606" ph="//..." />
+            <marker date="1519003086666" expanded="true" signature="595:606" ph="//..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/initCarte.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="105" column="52" lean-forward="false" selection-start-line="105" selection-start-column="52" selection-end-line="105" selection-end-column="52" />
+        <state relative-caret-position="-2448">
+          <caret line="21" column="8" lean-forward="false" selection-start-line="21" selection-start-column="8" selection-end-line="21" selection-end-column="37" />
           <folding>
             <marker date="1518992416282" expanded="true" signature="772:778" ph="©" />
             <marker date="1518992416282" expanded="true" signature="1188:1194" ph="©" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/carteOffline.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="25" lean-forward="true" selection-start-line="6" selection-start-column="25" selection-end-line="6" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="365">
+          <caret line="501" column="36" lean-forward="true" selection-start-line="501" selection-start-column="36" selection-end-line="501" selection-end-column="48" />
+          <folding>
+            <element signature="n#head#0;n#html#0;n#!!top" expanded="false" />
           </folding>
         </state>
       </provider>
