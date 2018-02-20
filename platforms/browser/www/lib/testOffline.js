@@ -63,10 +63,30 @@ $("#retour2").click(function() {
 //     console.log(url);
 //     alert(url);
 // });
-//////
+////
+function getTileURL(coord, zoom) {
+    cor = ol.proj.transform([coord[0], coord[1]], 'EPSG:3857', 'EPSG:4326');
+    // cor = transform2(coord[0], coord[1]);
+    lon = cor[0];
+    lat = cor[1];
+    var out = [];
+    var xtile = parseInt(Math.floor((lon + 180) / 360 * (1 << zoom)));
+    var ytile = parseInt(Math.floor((1 - Math.log(Math.tan(lat.toRad()) + 1 / Math.cos(lat.toRad())) / Math.PI) / 2 * (1 << zoom)));
+    out[0] = zoom;
+    out[1] = xtile;
+    out[2] = ytile;
+    return out;
+}
+if (typeof(Number.prototype.toRad) === "undefined") {
+    Number.prototype.toRad = function() {
+        return this * Math.PI / 180;
+    }
+}
+var remoteTilesOSM = [];
+
 
 function getAllOSMTiles(coord1, coord2, nivZoom, sourceTile) {
-    var tileUrlFunction = sourceTile.getTileUrlFunction()
+    var tileUrlFunction = sourceTile.getTileUrlFunction();
     out1 = getTileURL(coord1, nivZoom);
     out2 = getTileURL(coord2, nivZoom);
 
@@ -82,43 +102,85 @@ function getAllOSMTiles(coord1, coord2, nivZoom, sourceTile) {
     }
 
     while (out1[1] <= out2[1]) {
-        var resetLoop = out1[2]
+        var resetLoop = out1[2];
         while (out1[2] <= out2[2]) {
             var tileURL = tileUrlFunction([out1[0], out1[1], -out1[2] - 1], ol.has.DEVICE_PIXEL_RATIO, ol.proj.get('EPSG:3857'));
-            var uri = encodeURI(tileURL)
-            remoteTilesOSM.push(uri)
+            var uri = encodeURI(tileURL);
+            remoteTilesOSM.push(uri);
             out1[2]++;
         }
-        out1[2] = resetLoop
+        out1[2] = resetLoop;
         out1[1] += 1;
     }
+    console.log(out1[0],out1[1],out1[2]-1)
+
 }
 
-$("#download").click(function() {
-    console.log(map.getView())
-})
 
+function tileSaverOSMStart(PolyEmprise) {
+    $('#Searching_Modal').modal('show')
+    var niveauxZoom = [10, 12, 13, 14, 15, 16, 17];
+    sourceTile = iqh1_WMS.getSource();
+    console.log('allo',sourceTile)
+    // var EmpSource = PolyEmprise.getSource();
+    // EmpSource.forEachFeature(function(feature){
+    //
+    //     var featGeom = feature.getGeometry();
+    //     var featExtent = featGeom.getExtent();
+
+
+        featExtent = map.getView().calculateExtent(map.getSize())
+        var lenZoom = niveauxZoom.length;
+        for (i = 0; i < lenZoom; i++) {
+            getAllOSMTiles([featExtent[0], featExtent[1]], [featExtent[2], featExtent[3]], niveauxZoom[i], sourceTile)
+        }
+    // })
+}
+//
+//
+//
+//
+//
+$("#download").click(function() {
+    poly = map.getView().calculateExtent(map.getSize());
+
+    var convertedCoordinates = [[poly[0],poly[1]], [poly[2],poly[1]], [poly[0],poly[3]], [poly[2],poly[3]]];
+
+    var polygonGeometry = new ol.geom.Polygon([convertedCoordinates])
+    var polygonFeature = new ol.Feature({ geometry : polygonGeometry });
+
+    var vectorSource = new ol.source.Vector();
+    vectorSource.addFeature(polygonFeature);
+
+    var PolyEmprise = new ol.layer.Vector({
+        source: vectorSource
+    });
+
+    tileSaverOSMStart()
+    // console.log(OSM.getSource())
+    // console.log(map.getView().calculateExtent(map.getSize()))
+});
+//
 
 // $("#download").click(function() {
 //     map.getView().setZoom(map.getView().getZoom()-1);
-//     var source = OSM.getSource();
+//     var source = iqh1_WMS.getSource();
+//     console.log(source)
 //     var tileUrlFunction = source.getTileUrlFunction();
 //
 //
 //
-//     });
-//
-//     // source.on('tileloadend', function (evt) {
-//     //     console.log(evt.tile)
-//     //     source_url = tileUrlFunction(evt.tile.getTileCoord(), 1, ol.proj.get('EPSG:3857'));
-//     //     console.log(source_url);
-//     //     localStorage.setItem('layerUrl' , source_url );
-//         // console.log('local'+ localStorage.getItem('layerUrl'));
+//     source.on('change', function (evt) {
+//         console.log(evt.tile)
+//         source_url = tileUrlFunction(evt.tile.getTileCoord(), 1, ol.proj.get('EPSG:3857'));
+//         console.log(source_url);
+//         localStorage.setItem('layerUrl' , source_url );
+//         console.log('local'+ localStorage.getItem('layerUrl'));
 //
 //         // evt.preventDefault(true);
 //         // console.log('allo'+preventDefault)
 //
-//     // });
+//     });
 //
 //     // source.on('tileloadend', function (event) {
 //     //     event.stopPropagation()

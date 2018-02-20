@@ -1,6 +1,5 @@
 
-
-    /** Définition du centre et du zoom sur la carte au démarrage **/
+/** Définition du centre et du zoom sur la carte au démarrage **/
 	var latCenter = 49.15;
     var lonCenter = -73;
     var zoomCenter = 8;
@@ -112,9 +111,11 @@
     });
     iqh2_250.setVisible(true);
 
+
+
     var iqh2_WMS = new ol.layer.Tile({source: new ol.source.TileWMS({
                 url: 'http://igeomedia.com/cgi-bin/mapserv?map=/home/odupras/public_html/data/iqh.map&',
-                params: {LAYERS: 'iqh8', VERSION: '1.1.1'}
+                params: {LAYERS: 'iqh8', VERSION: '1.1.1'},
             }),
         maxResolution: 200,
         });
