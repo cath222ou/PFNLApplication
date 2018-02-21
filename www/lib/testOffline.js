@@ -165,34 +165,64 @@ $("#retour2").click(function() {
 //     // console.log(map.getView().calculateExtent(map.getSize()))
 // });
 ////////////////////////////////////////////////////////////////
-
-var source = OSM.getSource();
-var tileUrlFunction = source.getTileUrlFunction();
-
-var loadTile = function (evt) {
-    console.log(evt.tile)
-    source_url = tileUrlFunction(evt.tile.getTileCoord(), 1, ol.proj.get('EPSG:3857'));
-    console.log(source_url);
-};
-
-$("#download").click(function() {
-    // map.getView().setZoom(map.getView().getZoom()-1);
-    zoom = [10, 11];
-    map.getView().setZoom(zoom[0]-1);
-
-    source.on('tileloadend', loadTile);
-
-    for (var i = 0; i < zoom.length; i++) {
-        source.on('tileloadstart', function(evt){
-            console.log(evt)
-
-        })
-        console.log(zoom[i])
-        map.getView().setZoom(zoom[i]);
-        // if  (i = zoom.length){
-        //     source.un('tileloadend', loadTile)
-        // }
-    };
+//
+// var source = OSM.getSource();
+// var tileUrlFunction = source.getTileUrlFunction();
+//
+// var loadTile = function (evt) {
+//     source_url = tileUrlFunction(evt.tile.getTileCoord(), 1, ol.proj.get('EPSG:3857'));
+//     console.log(source_url);
+// };
+//
+// $("#download").click(function() {
+//     // map.getView().setZoom(map.getView().getZoom()-1);
+//     zoom = [10, 11];
+//     map.getView().setZoom(zoom[0]-1);
+//
+//     // source.on('tileloadend', loadTile);
+//
+//     // return new Promise(function (resolve) {
+//     //     source.on("tileloadend", function tileLoad() {
+//     //         source.un("tileloadend", tileLoad);
+//     //         //call any handler you want here, if needed
+//     //         resolve();
+//     //     });
+//     // });
+//     var promesse = function () {
+//         return new Promise(function (resolve, reject) {
+//             source.on("tileloadstart", function Tileload(evt) {
+//                 source_url = tileUrlFunction(evt.tile.getTileCoord(), 1, ol.proj.get('EPSG:3857'));
+//                 // console.log(source_url);
+//             });
+//             resolve();
+//         });
+//     };
+//
+//     for (var i = 0; i < zoom.length; i++) {
+//         map.getView().setZoom(zoom[i]);
+//         promesse(zoom[i]).then(function () {
+//             console.log(source_url);
+//         });
+//     }
+//
+//         // var test = new Promise(function () {
+//         //
+//         //
+//         //         source.on("tileloadstart", function Tileload(evt) {
+//         //             source_url = tileUrlFunction(evt.tile.getTileCoord(), 1, ol.proj.get('EPSG:3857'));
+//         //             console.log(source_url);
+//         //         });
+//         //
+//         //
+//         //     ;
+//         // });
+//
+//
+//
+//         // if  (i = zoom.length){
+//         //     source.un('tileloadend', loadTile)
+//         // }
+// });
 
     // function (evt) {
         //     console.log(evt.tile)
@@ -207,4 +237,3 @@ $("#download").click(function() {
     // });
 
 
-});
